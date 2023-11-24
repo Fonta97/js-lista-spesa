@@ -5,19 +5,15 @@
 // aggiungo li nuovo con articolo inserito
 // ripeto 
 
-const list = [];
+const list = ["pere", "mele", "chele", "eskere", "michele"];
 const listUl = document.querySelector(".lista");
 let i = 0;
 
-while (list.length < 10) {
-
-    const richiestaArticolo = prompt("Inserisci la tua lista della spesa ");
-
-    list.push(richiestaArticolo);
+while (i < list.length) {
 
     const elementLi = document.createElement("li");
 
-    elementLi.append(list);
+    elementLi.append(list[i])
 
     listUl.append(elementLi);
 
