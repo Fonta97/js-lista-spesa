@@ -6,14 +6,21 @@
 // ripeto 
 
 const list = [];
-const listUl = documentquerySelector(".lista")
+const listUl = document.querySelector(".lista");
 let i = 0;
 
 while (list.length < 10) {
+
     const richiestaArticolo = prompt("Inserisci la tua lista della spesa ");
+
     list.push(richiestaArticolo);
+
     const elementLi = document.createElement("li");
-    elementLi.append(richiestaArticolo)
-    listUl.append(elementLi)
+
+    elementLi.append(list);
+
+    listUl.append(elementLi);
+
     i++;
+
 }
